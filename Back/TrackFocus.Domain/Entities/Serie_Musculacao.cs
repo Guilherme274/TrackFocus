@@ -7,7 +7,7 @@ namespace TrackFocus.Domain.Entities
         [Column("cd_id", TypeName = "int")]
         public int Id { get; set; }
         [Column("qt_repeticoes", TypeName = "int")]
-        public int? NumRepeticoes { get; set; }        
+        public int NumRepeticoes { get; set; }        
         [Column("qt_peso")]
         public int Peso { get; set; }
         [Column("cd_exercicioId")]
