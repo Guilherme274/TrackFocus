@@ -14,8 +14,7 @@ namespace TrackFocus.Application.Profiles.Security
             .ForMember(dest => dest.User, opt => opt.Ignore())  // Navegação
             .ForMember(dest => dest.UserId, opt => opt.Ignore());  // Vem do token
 
-            CreateMap<Treino, TreinoResponse>();
-            
+            CreateMap<Treino, TreinoResponse>().ForMember(dest => dest.Exercicios, opt => opt.MapFrom(src => src.Exercicios));            
         }
     }
 }
