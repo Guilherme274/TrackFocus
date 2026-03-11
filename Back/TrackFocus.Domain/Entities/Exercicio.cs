@@ -20,7 +20,9 @@ namespace TrackFocus.Domain.Entities
         [ForeignKey(nameof(TreinoId))]
         [JsonIgnore]
         public Treino Treino { get; set; }
+        [JsonIgnore]
         public ICollection<Cardio>? ExerciciosCardio { get; set; }
+        [JsonIgnore]
         public ICollection<Serie_Musculacao>? ExerciciosMusculacao { get; set; }        
     }
 }
