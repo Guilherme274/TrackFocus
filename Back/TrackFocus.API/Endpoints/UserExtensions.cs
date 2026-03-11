@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticAssets;
-using TrackFocus.Application.DTOs.Request;
-using TrackFocus.Application.DTOs.Response;
+using TrackFocus.Application.DTOs.Security.Request;
+using TrackFocus.Application.DTOs.Security.Response;
 using TrackFocus.Application.Service;
 using TrackFocus.Domain.Entities;
 
