@@ -1,5 +1,6 @@
 using AutoMapper;
-using TrackFocus.Application.DTOs.Request;
+using TrackFocus.Application.DTOs.Security.Request;
+using TrackFocus.Application.DTOs.Security.Response;
 using TrackFocus.Domain.Entities;
 
 namespace TrackFocus.Application.Profiles.Security
