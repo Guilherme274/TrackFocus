@@ -1,4 +1,4 @@
-namespace TrackFocus.Application.DTOs.Request
+namespace TrackFocus.Application.DTOs.Security.Response
 {
     public record LoginResponse(string Id, string Email, string UserName, DateTime DataNascimento, string Token)
     {

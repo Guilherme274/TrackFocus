@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 
-namespace TrackFocus.Application.DTOs.Request
+namespace TrackFocus.Application.DTOs.Security.Request
 {
     public record RegisterRequest
     (
