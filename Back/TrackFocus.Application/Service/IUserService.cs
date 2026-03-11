@@ -1,5 +1,5 @@
-using TrackFocus.Application.DTOs.Request;
-using TrackFocus.Application.DTOs.Response;
+using TrackFocus.Application.DTOs.Security.Request;
+using TrackFocus.Application.DTOs.Security.Response;
 
 namespace TrackFocus.Application.Service
 {
