@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace TrackFocus.Domain.Entities
 {
@@ -10,11 +11,16 @@ namespace TrackFocus.Domain.Entities
         public int Id { get; set; }
         [Column("nm_exercicio", TypeName = "varchar(100)")]
         public string Nome { get; set; } = string.Empty;
-        [Column("cd_categoriaId", TypeName = "int")]
-        public int CategoriaId { get; set; }
-        [ForeignKey(nameof(CategoriaId))]
-        public Categoria Categoria { get; set; }
-        public ICollection<Treino> Treinos { get; set; }
-        public ICollection<DetalheMusculacao> Detalhes { get; set; }
+        [Column("cd_tipo_exercico", TypeName = "int")]
+        public int Tipo_ExercicioId { get; set; }
+        [ForeignKey(nameof(Tipo_ExercicioId))]
+        public Tipo_Exercicio Tipo_Exercicio { get; set; }
+        [Column("cd_treino")]
+        public int TreinoId { get; set; }
+        [ForeignKey(nameof(TreinoId))]
+        [JsonIgnore]
+        public Treino Treino { get; set; }
+        public ICollection<Cardio>? ExerciciosCardio { get; set; }
+        public ICollection<Serie_Musculacao>? ExerciciosMusculacao { get; set; }        
     }
 }
